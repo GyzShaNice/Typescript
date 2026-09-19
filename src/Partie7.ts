@@ -1,5 +1,4 @@
 import {User,Order} from "./Partie1"
-import {OrderStatus} from "./Partie4"
 
 // 38
 export type UpdateUser = Partial<User>

@@ -1,22 +1,17 @@
 import {Order} from "./Partie1"
 // CLASS
 // 13
-class OrderManager{
-    private Order:Order[] = []
+export class OrderManager{
+    private orders:Order[] = []
 
-    add(order:Order):void{
-        this.order.push(order)
+    add(orders:Order):void{
+        this.orders.push(orders)
     }
 
-    findById(id:number):Order|undefined{
-        return this.order.push()
+    findById(id: number): Order| undefined {
+        return this.orders.find((orders) => orders.id === id)
     }
-    removeById(id:number):boolean{
-        return this.
-    }
-    getTotalRevenue():number{
-        return 
-    }
+   
 }
 
 // orders cannot be accessed outside the class because,

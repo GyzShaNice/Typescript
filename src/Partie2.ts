@@ -8,6 +8,7 @@ export interface User extends Identifiable{
 const person:User={name:"jiz",email:"j@gmail.com",phone:333,id:1}
 console.log(person)
 
+
 // 8
 export interface Address{
     street:string,
@@ -25,7 +26,9 @@ export interface Beneficiary extends Identifiable{
     phone:number,
     address:Address
 }
-const belong:Beneficiary={name:"emma",city:"edea",phone:11,id:2}
+const belong:Beneficiary={name:"emma",city:"edea",phone:11,id:2,address:{
+    street:"baf",city:"baf",country:"cameroon"
+}}
 console.log(belong)
 
 // 10
@@ -33,12 +36,13 @@ interface Contactable{
     getContactLabel():string
 }
 
-// 11
-// class BeneficiaryService implements Contactable{
-//     getContactLabel():string{
-//         console.log("getContactLabel");
-//     }
-// }
+11
+class BeneficiaryService implements Contactable{
+    getContactLabel():string{
+        return "getContactLabel";
+    }
+}
+
 
 // 12
 interface Identifiable{

@@ -9,7 +9,7 @@ interface GroceryOrder{
 // 32
 interface PharmacyOrder{
     type:'pharmacy'
-    prescriptionREquired:boolean,
+    prescriptionRequired:boolean,
     medicamentName:string
 }
 
@@ -24,7 +24,7 @@ interface GiftOrder{
 type OrderDetails = GroceryOrder|PharmacyOrder|GiftOrder|CakeOrder
 
 // 35
-function describeOrder(order:OrderDetails):string{
+export function describeOrder(order:OrderDetails):string{
     switch (order.type) {
         case 'grocery':
             return `the grocery store is found at ${order.deliveryAddress}`
@@ -42,8 +42,6 @@ function describeOrder(order:OrderDetails):string{
             return `the best is the one with ${order.flavor}`
             break;    
     
-        default:
-            return 
     }
 }
 

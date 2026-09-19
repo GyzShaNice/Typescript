@@ -1,6 +1,6 @@
 // UNIONS
 // 20
-type City = "Bafoussam"|"Douala"|"Yaounde"
+export type City = "Bafoussam"|"Douala"|"Yaounde"
 
 // 21
 export type OrderStatus = "pending"|"in_progress"|"completed"|"cancelled";
