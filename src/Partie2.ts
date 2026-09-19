@@ -1,6 +1,6 @@
 // INTERFACES
 // 7
-interface User extends Identifiable{
+export interface User extends Identifiable{
     name:string,
     email:string,
     phone:number
@@ -19,13 +19,13 @@ console.log(home)
 
 
 // 9
-interface Beneficiary extends Identifiable{
+export interface Beneficiary extends Identifiable{
     name:string,
     city:string,
     phone:number,
     address:Address
 }
-const belong:Beneficiary={name:"emma",city:"edea",phone:11,id:2,address:"we"}
+const belong:Beneficiary={name:"emma",city:"edea",phone:11,id:2}
 console.log(belong)
 
 // 10
